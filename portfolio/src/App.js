@@ -6,7 +6,7 @@ import Main from "./Components/Main/Main";
 import Portfolio from "./Components/Main/Portfolio/Portfolio";
 
 function App() {
-  const language = useSelector((state) => state);
+  const language = useSelector((state) => state.language);
 
   return (
     <div className="App">

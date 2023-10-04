@@ -1,0 +1,29 @@
+.portfolio {
+  padding: 100px 20px 0 20px;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.btnWrapper * {
+  margin-right: 5px;
+}
+
+.btnWrapper *:last-child {
+  margin-right: 0;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.imageWrapper img {
+  width: 450px;
+  height: 560px;
+  margin-bottom: 25px;
+}

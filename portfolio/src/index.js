@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import translate from "./translate";
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
-const reducer = (state = translate.en, action) => {
+const reducerLanguage = (state = translate.en, action) => {
   switch (action.type) {
     case "en":
       return { ...translate.en };
@@ -17,7 +17,27 @@ const reducer = (state = translate.en, action) => {
   }
 };
 
-const store = configureStore({ reducer });
+const reducerPortfolio = (state = "autumn", action) => {
+  switch (action.type) {
+    case "autumn":
+      return "autumn";
+    case "summer":
+      return "summer";
+    case "spring":
+      return "spring";
+    case "winter":
+      return "winter";
+    default:
+      return state;
+  }
+};
+
+const rootReducer = combineReducers({
+  language: reducerLanguage,
+  portfolio: reducerPortfolio,
+});
+
+const store = configureStore({ reducer: rootReducer });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

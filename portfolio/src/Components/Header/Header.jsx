@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import styles from "./Header.module.css";
 import { useDispatch } from "react-redux";
+import Btn from "../Btn/Btn";
 
 const Header = ({ language }) => {
   const refRu = useRef();
@@ -60,7 +61,7 @@ const Header = ({ language }) => {
         <div className={styles.headerBottomWrapper}>
           <h1>{language["hero-title"]}</h1>
           <p>{language["hero-text"]}</p>
-          <button>{language.hire}</button>
+          <Btn title={language.hire} bg={true}/>
         </div>
       </div>
     </header>

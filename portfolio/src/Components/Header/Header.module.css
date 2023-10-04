@@ -63,13 +63,3 @@ header {
   width: 470px;
   margin-bottom: 25px;
 }
-
-.headerBottomWrapper button {
-  background: #bdae82;
-  width: 220px;
-  height: 55px;
-  color: black;
-
-  font-size: 20px;
-  line-height: 40px;
-}

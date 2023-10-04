@@ -1,0 +1,56 @@
+.contacts {
+  width: 1440px;
+  padding: 60px 20px 195px 970px;
+}
+
+.contactsWrapper {
+  width: 450px;
+  height: 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contactsWrapper h2 {
+  color: #bdae82;
+  font-size: 40px;
+  line-height: 80px;
+}
+
+.contactsWrapper input {
+  border: 2px solid #bdae82;
+  background: rgba(0, 0, 0, 0.5);
+  width: 450px;
+  height: 50px;
+  padding: 10px 20px;
+
+  color: #bdae82;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.contactsWrapper textarea {
+  border: 2px solid #bdae82;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100px;
+  resize: none;
+  padding: 10px 20px;
+
+  color: #bdae82;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.contactsWrapper input::placeholder,
+.contactsWrapper textarea::placeholder {
+  color: #bdae82;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+}

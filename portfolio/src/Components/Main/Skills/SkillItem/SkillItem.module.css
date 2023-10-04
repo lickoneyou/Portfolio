@@ -1,0 +1,23 @@
+.itemWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 240px;
+  padding: 0 20px;
+}
+
+.itemWrapper h4 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.itemWrapper p {
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+}

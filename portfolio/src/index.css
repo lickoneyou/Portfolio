@@ -9,7 +9,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h5 {
   font-family: "Merriweather", serif;
   font-weight: 700;
 }

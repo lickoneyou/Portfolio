@@ -23,7 +23,7 @@ const Video = ({ language }) => {
   const myToggleVideo = toggleVideo();
 
   return (
-    <section className={styles.video}>
+    <section className={styles.video} id="video">
       <Title title={language.video} />
       <div className={styles.playerWrapper}>
         <video

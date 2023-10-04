@@ -5,6 +5,7 @@ import Btn from "../../Btn/Btn";
 const Contacts = ({ language }) => {
   return (
     <section
+      id="contacts"
       className={styles.contacts}
       style={{ backgroundImage: "url(./assets/img/contacts.jpg)" }}
     >

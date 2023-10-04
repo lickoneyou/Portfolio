@@ -6,7 +6,7 @@ import PriceItem from "./PriceItem/PriceItem";
 const Price = ({ language }) => {
   const priceItem = [1, 2, 3];
   return (
-    <section className={styles.price}>
+    <section className={styles.price} id="price">
       <Title title={language.price} />
       <div className={styles.itemsWrapper}>
         {priceItem.map((el, ind) => (

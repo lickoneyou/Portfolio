@@ -20,13 +20,7 @@ const Header = ({ language }) => {
     refRu.current.style.color = "#FFF";
   };
 
-  const nav = [
-    language.skills,
-    language.portfolio,
-    language.video,
-    language.price,
-    language.contacts,
-  ];
+  const nav = ["skills", "portfolio", "video", "price", "contacts"];
   return (
     <header style={{ backgroundImage: "url(./assets/img/bg.png)" }}>
       <div className={styles.headerTop}>
@@ -36,7 +30,7 @@ const Header = ({ language }) => {
             <ul>
               {nav.map((el, ind) => (
                 <li key={el + ind}>
-                  <a href="#">{el}</a>
+                  <a href={"#" + el}>{language[el]}</a>
                 </li>
               ))}
             </ul>
@@ -61,7 +55,7 @@ const Header = ({ language }) => {
         <div className={styles.headerBottomWrapper}>
           <h1>{language["hero-title"]}</h1>
           <p>{language["hero-text"]}</p>
-          <Btn title={language.hire} bg={true}/>
+          <Btn title={language.hire} bg={true} />
         </div>
       </div>
     </header>

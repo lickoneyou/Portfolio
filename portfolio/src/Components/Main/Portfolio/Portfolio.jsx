@@ -10,7 +10,7 @@ const Portfolio = ({ language }) => {
   const dispatch = useDispatch();
 
   return (
-    <section className={styles.portfolio}>
+    <section className={styles.portfolio} id="portfolio">
       <Title title={language.portfolio} />
       <div className={styles.btnWrapper}>
         {seasons.map((el) => (

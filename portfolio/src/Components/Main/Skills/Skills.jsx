@@ -7,7 +7,7 @@ const Skills = ({ language }) => {
   const skillItem = [1, 2, 3, 4];
 
   return (
-    <section className={styles.skills}>
+    <section className={styles.skills} id='skills'>
       <Title title={language.skills} />
       <div className={styles.skillItemsWrapper}>
       {skillItem.map(el => <SkillItem key={el} elem={el} language={language}/>)}

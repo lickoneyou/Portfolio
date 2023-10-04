@@ -13,3 +13,7 @@ h3 {
   font-family: "Merriweather", serif;
   font-weight: 700;
 }
+
+.btnNone {
+  opacity: 0;
+}

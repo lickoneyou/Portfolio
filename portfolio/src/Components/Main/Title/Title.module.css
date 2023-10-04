@@ -1,0 +1,19 @@
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleWrapper hr {
+  display: flex;
+  width: 280px;
+  height: 3px;
+  background: #bdae82;
+}
+
+.titleWrapper h2 {
+  color: #bdae82;
+  font-size: 40px;
+  line-height: 80px;
+  margin: 0 20px 0 20px;
+}

@@ -2,13 +2,15 @@ import { useSelector } from "react-redux";
 import "./reset.css";
 import "./App.css";
 import Header from "./Components/Header/Header";
+import Main from "./Components/Main/Main";
 
 function App() {
-  const language = useSelector(state => state)
+  const language = useSelector((state) => state);
 
   return (
     <div className="App">
-      <Header language={language}/>
+      <Header language={language} />
+      <Main language={language} />
     </div>
   );
 }

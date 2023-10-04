@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+footer p span {
+  margin-right: 20px;
+}
+
+footer p span:last-child {
+  margin-right: 0;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer div a {
+  display: flex;
+  margin-right: 20px;
+}
+
+footer div a:last-child {
+  margin-right: 0;
+}
